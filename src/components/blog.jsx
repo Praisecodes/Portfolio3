@@ -9,7 +9,7 @@ export default function Blog(){
 
             <div className="postsboard">
                 {(postCount == 0)?
-                <h1 className="noPost">No Available Blog Posts</h1>
+                <h1 className="noPost">No Blog Posts Available</h1>
                 : <p>These are the posts</p>
                 }
             </div>
