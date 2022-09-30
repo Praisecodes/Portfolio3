@@ -23,6 +23,14 @@ body{
     background-color: var(--bgColor);
 }
 
+.normal{
+    background-color: var(--bgColor);
+}
+
+.standOut{
+    background-color: var(--majorOrange);
+}
+
 .header{
     background-color: var(--alternateColor);
     padding: 2.3rem 6rem;
@@ -118,8 +126,8 @@ body{
         justify-content: center;
         align-items: center;
         img{
-            width: 70%;
-            height: 73%;
+            width: 90%;
+            height: 70%;
         }
     }
 }
@@ -127,4 +135,46 @@ body{
 .services{
     background-color: var(--alternateColor);
     padding: 4rem 6rem;
+    font-family: "Nunito";
+    color: white;
+    .writeup{
+        display: flex;
+        .title{
+            p{
+                font-size: .9rem;
+                color: var(--majorOrange);
+            }
+            h1{
+                line-height: 54px;
+                &::after{
+                    content: "";
+                    width: 60%;
+                    height: 3px;
+                    background-color: var(--majorOrange);
+                    display: block;
+                }
+            }
+        }
+        .info{
+            margin: 0 3rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .card{
+            padding: 2.5rem 1.5rem;
+            margin: .3rem;
+            width: 20rem;
+            border-radius: 5px;
+            transition: .2s;
+            &:hover{
+                transform: scale(102%);
+            }
+        }
+    }
 }
