@@ -2,6 +2,10 @@
   font-family: "Lato";
   src: url("../assets/Lato-Regular.ttf");
 }
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/Nunito-Regular.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +19,6 @@
 
 body {
   background-color: var(--bgColor);
-  font-family: "Lato";
 }
 
 .header {
@@ -25,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Lato";
 }
 .header h1 {
   font-size: 1.8rem;
@@ -43,5 +47,67 @@ body {
   transition: 0.2s;
 }
 .header ul li:hover {
+  color: var(--majorOrange);
+}
+
+.intro {
+  background-color: transparent;
+  font-family: "Nunito";
+  position: relative;
+}
+.intro .writeUp {
+  padding: 4rem 5rem;
+  color: white;
+  width: 50vw;
+}
+.intro .writeUp .socials {
+  color: white;
+  display: flex;
+}
+.intro .writeUp .socials a {
+  color: white;
+}
+.intro .writeUp .socials i {
+  border-radius: 50%;
+  border: 1px solid var(--majorOrange);
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.intro .writeUp .socials i:hover {
+  color: var(--majorOrange);
+}
+.intro .writeUp h1 {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+}
+.intro .writeUp p {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.intro .writeUp button {
+  border: 0;
+  background-color: transparent;
+  border: 2px solid var(--majorOrange);
+  padding: 0 2.5rem;
+  height: 45px;
+  margin: 0 1rem;
+  color: white;
+  font-family: "Nunito";
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.intro .writeUp button:hover {
   color: var(--majorOrange);
 }/*# sourceMappingURL=style.css.map */
