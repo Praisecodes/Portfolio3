@@ -165,7 +165,7 @@ body {
   align-items: center;
 }
 .services .cards .card {
-  padding: 2.5rem 0.7rem;
+  padding: 2.5rem 0.5rem 2.5rem 1.5rem;
   margin: 1rem;
   width: 20rem;
   border-radius: 5px;
@@ -173,6 +173,9 @@ body {
 }
 .services .cards .card:hover {
   transform: scale(102%);
+}
+.services .cards .card img {
+  margin-bottom: 1rem;
 }
 .services .cards .card h2 {
   font-size: 1.2rem;
@@ -219,4 +222,9 @@ body {
   background-color: var(--majorOrange);
   border-radius: 50px;
   text-decoration: none;
+}
+
+.skills {
+  background-color: var(--alternateColor);
+  padding: 4rem 6rem;
 }/*# sourceMappingURL=style.css.map */
