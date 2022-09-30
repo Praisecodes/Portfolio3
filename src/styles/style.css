@@ -270,4 +270,31 @@ body {
 }
 .skills .skillset .skill .writeandimg p {
   color: var(--majorOrange);
+}
+
+.blog {
+  color: white;
+  padding: 4rem 6rem;
+  font-family: "Nunito";
+}
+.blog .sectionTitle {
+  line-height: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.blog .sectionTitle::after {
+  content: "";
+  display: block;
+  background-color: var(--majorOrange);
+  width: 60%;
+  height: 3px;
+}
+.blog .postsboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .postsboard .noPost {
+  color: rgba(255, 255, 255, 0.2666666667);
 }/*# sourceMappingURL=style.css.map */

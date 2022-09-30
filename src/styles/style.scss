@@ -274,3 +274,28 @@ body{
         }
     }
 }
+
+.blog{
+    color: white;
+    padding: 4rem 6rem;
+    font-family: "Nunito";
+    .sectionTitle{
+        line-height: 50px;
+        width: fit-content;
+        &::after{
+            content: "";
+            display: block;
+            background-color: var(--majorOrange);
+            width: 60%;
+            height: 3px;
+        }
+    }
+    .postsboard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .noPost{
+            color: #ffffff44;
+        }
+    }
+}
