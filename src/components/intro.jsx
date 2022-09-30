@@ -8,7 +8,7 @@ export default function Intro(){
                 <div className="socials">
                     <a href="https://web.facebook.com/praisecodes"><i><FaFacebookF /></i></a>
                     <a href="https://twitter.com/PraiseCodes"><i><FaTwitter /></i></a>
-                    <a href="hhttps://www.linkedin.com/in/okechukwu-praise-okeypraise-97a961239/"><i><FaLinkedin /></i></a>
+                    <a href="https://www.linkedin.com/in/okechukwu-praise-okeypraise-97a961239/"><i><FaLinkedin /></i></a>
                     <a href="https://www.instagram.com/praisecodes/"><i><FaInstagramSquare /></i></a>
                 </div> <br /><br />
                 <h1>I am Okeypraise Junior</h1><br />

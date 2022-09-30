@@ -364,4 +364,40 @@ body {
   right: 0;
   cursor: pointer;
   box-shadow: 0 5px 28px 1px rgba(249, 88, 66, 0.2666666667);
+}
+
+.footer {
+  padding: 1.5rem 6rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito";
+}
+.footer h2 span {
+  color: var(--majorOrange);
+}
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .socials a {
+  color: white;
+}
+.footer .socials a i {
+  border: 1px solid var(--majorOrange);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.footer .socials a:hover {
+  color: var(--majorOrange);
 }/*# sourceMappingURL=style.css.map */
