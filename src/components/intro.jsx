@@ -1,4 +1,5 @@
 import {FaFacebookF, FaTwitter, FaLinkedin, FaInstagramSquare} from "react-icons/fa"
+import AboutPic from "../assets/praisecodes.png"
 
 export default function Intro(){
     return (
@@ -15,7 +16,9 @@ export default function Intro(){
                 A fullstack web developer with 2 years experience as a software developer.</p> <br />
                 <button>Hire Me</button>
             </div>
-            <div className="image"></div>
+            <div className="image">
+                <img src={AboutPic} alt="" />
+            </div>
         </div>
     )
 }

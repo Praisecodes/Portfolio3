@@ -54,6 +54,7 @@ body {
   background-color: transparent;
   font-family: "Nunito";
   position: relative;
+  display: flex;
 }
 .intro .writeUp {
   padding: 4rem 5rem;
@@ -100,7 +101,7 @@ body {
   margin: 0 1rem;
   color: white;
   font-family: "Nunito";
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,4 +111,18 @@ body {
 }
 .intro .writeUp button:hover {
   color: var(--majorOrange);
+}
+.intro .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .image img {
+  width: 70%;
+  height: 73%;
+}
+
+.services {
+  background-color: var(--alternateColor);
+  padding: 4rem 6rem;
 }/*# sourceMappingURL=style.css.map */

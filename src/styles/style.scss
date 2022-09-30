@@ -56,6 +56,7 @@ body{
     background-color: transparent;
     font-family: "Nunito";
     position: relative;
+    display: flex;
     .writeUp{
         padding: 4rem 5rem;
         color: white;
@@ -100,7 +101,7 @@ body{
             margin: 0 1rem;
             color: white;
             font-family: "Nunito";
-            font-size: 1.2rem;
+            font-size: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -112,4 +113,18 @@ body{
             }
         }
     }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 70%;
+            height: 73%;
+        }
+    }
+}
+
+.services{
+    background-color: var(--alternateColor);
+    padding: 4rem 6rem;
 }
