@@ -138,7 +138,6 @@ body{
     font-family: "Nunito";
     color: white;
     .writeup{
-        //display: flex;
         .title{
             p{
                 font-size: .9rem;
@@ -157,7 +156,6 @@ body{
             }
         }
         .info{
-            //margin: 0 3rem;
             display: flex;
             align-items: center;
         }
@@ -232,4 +230,45 @@ body{
 .skills{
     background-color: var(--alternateColor);
     padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Nunito";
+    h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        &::after{
+            content: "";
+            display: block;
+            background-color: var(--majorOrange);
+            width: 60%;
+            height: 3px;
+        }
+    }
+
+    .skillset{
+        display: flex;
+        flex-wrap: wrap;
+        .skill{
+            width: 20rem;
+            padding: 1rem 1.5rem;
+            background-color: var(--bgColor);
+            margin: 1rem .5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .writeandimg{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    color: var(--majorOrange);
+                }
+            }
+        }
+    }
 }

@@ -226,4 +226,46 @@ body {
 .skills {
   background-color: var(--alternateColor);
   padding: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Nunito";
+}
+.skills h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.skills h1::after {
+  content: "";
+  display: block;
+  background-color: var(--majorOrange);
+  width: 60%;
+  height: 3px;
+}
+.skills .skillset {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .skillset .skill {
+  width: 20rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--bgColor);
+  margin: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills .skillset .skill .writeandimg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skillset .skill .writeandimg p {
+  color: var(--majorOrange);
 }/*# sourceMappingURL=style.css.map */
