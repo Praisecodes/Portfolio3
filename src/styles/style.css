@@ -297,4 +297,71 @@ body {
 }
 .blog .postsboard .noPost {
   color: rgba(255, 255, 255, 0.2666666667);
+}
+
+.contact {
+  padding: 4rem 6rem;
+  color: white;
+  font-family: "Nunito";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--alternateColor);
+}
+.contact h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 50px;
+}
+.contact h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: var(--majorOrange);
+}
+.contact form {
+  position: relative;
+}
+.contact form input {
+  width: 29rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-family: "Nunito";
+  background-color: var(--bgColor);
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  color: white;
+}
+.contact form textarea {
+  width: 29.1rem;
+  padding: 1rem;
+  height: 10rem;
+  font-family: "Nunito";
+  background-color: var(--bgColor);
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  resize: none;
+  color: white;
+}
+.contact form button {
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  background-color: var(--majorOrange);
+  padding: 0.9rem 4.5rem;
+  font-size: 1rem;
+  font-family: "Nunito";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  box-shadow: 0 5px 28px 1px rgba(249, 88, 66, 0.2666666667);
 }/*# sourceMappingURL=style.css.map */
