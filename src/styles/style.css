@@ -136,15 +136,15 @@ body {
   font-family: "Nunito";
   color: white;
 }
-.services .writeup {
-  display: flex;
-}
 .services .writeup .title p {
   font-size: 0.9rem;
   color: var(--majorOrange);
 }
 .services .writeup .title h1 {
   line-height: 54px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .services .writeup .title h1::after {
   content: "";
@@ -154,7 +154,6 @@ body {
   display: block;
 }
 .services .writeup .info {
-  margin: 0 3rem;
   display: flex;
   align-items: center;
 }

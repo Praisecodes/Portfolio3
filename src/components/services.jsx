@@ -9,7 +9,7 @@ export default function Services(){
                 <div className="title">
                     <p>SERVICES</p>
                     <h1>My Services</h1>
-                </div>
+                </div><br />
                 <div className="info">
                 Lorem Ipsum is a piece of text, used by designers to fill a space where the content will eventually sit. <br />
                 It helps show how text will look once a piece of content is finished, during the planning phase.
