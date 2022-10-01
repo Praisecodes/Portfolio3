@@ -15,7 +15,7 @@ export default function Intro(){
                 <p>I am Okeypraise Junior<br />
                 A fullstack web developer with 2 years experience as a software developer.</p> <br />
                 <button>Hire Me</button>
-            </div>
+            </div><br /><br />
             <div className="image">
                 <img src={IntroPic} alt="" />
             </div>

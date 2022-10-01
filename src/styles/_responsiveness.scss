@@ -1,0 +1,149 @@
+@media screen and (max-width: 980px) {
+    .intro{
+        flex-direction: column;
+        align-items: center;
+        .writeUp{
+            width: 90vw;
+        }
+    }
+    .about{
+        .innerDiv{
+            flex-direction: column;
+            align-items: center;
+            .image{
+                width: 20rem;
+            }
+            .info{
+                padding: 1rem 0;
+                margin: 0;
+            }
+        }
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .writeup{
+            display: inherit;
+            flex-direction: column;
+            align-items: center;
+            h1, p{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .info{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .header{
+        padding: 2.3rem 1rem;
+    }
+    .intro, .services, .about, .skills, .blog, .contact{
+        padding: 4rem 2rem;
+    }
+    .footer{
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .header{
+        ul{
+            display: none;
+        }
+    }
+    .intro{
+        .writeUp{
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    .blog{
+        .postsboard{
+            .noPost{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .footer{
+        h2{
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: .7rem;
+        }
+        .socials{
+            a{
+                i{
+                    font-size: .8rem;
+                    margin: 0 .3rem;
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 410px){
+    .intro{
+        .image{
+            width: 100vw;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .blog{
+        .postsboard{
+            .noPost{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .footer{
+        .socials{
+            a{
+                i{
+                    padding: 0;
+                    border-radius: 0;
+                    border: 0;
+                    margin: 0 .05rem;
+                }
+            }
+        }
+    }
+}

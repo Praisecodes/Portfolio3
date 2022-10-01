@@ -63,9 +63,9 @@ body {
   font-family: "Nunito";
   position: relative;
   display: flex;
+  padding: 4rem 5rem;
 }
 .intro .writeUp {
-  padding: 4rem 5rem;
   color: white;
   width: 50vw;
 }
@@ -81,7 +81,7 @@ body {
   border: 1px solid var(--majorOrange);
   padding: 0.3rem;
   font-size: 1.2rem;
-  margin: 0 1rem;
+  margin: 0 0.7rem;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -93,11 +93,9 @@ body {
   color: var(--majorOrange);
 }
 .intro .writeUp h1 {
-  padding: 0 1rem;
   font-size: 2.5rem;
 }
 .intro .writeUp p {
-  padding: 0 1rem;
   font-size: 1.2rem;
 }
 .intro .writeUp button {
@@ -106,7 +104,6 @@ body {
   border: 2px solid var(--majorOrange);
   padding: 0 2.5rem;
   height: 45px;
-  margin: 0 1rem;
   color: white;
   font-family: "Nunito";
   font-size: 1rem;
@@ -124,10 +121,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 35rem;
+  max-width: 80%;
 }
 .intro .image img {
   width: 90%;
-  height: 70%;
+  height: 100%;
 }
 
 .services {
@@ -169,7 +168,7 @@ body {
   width: 20rem;
   border-radius: 5px;
   transition: 0.2s;
-  max-width: 90vw;
+  max-width: 80vw;
 }
 .services .cards .card:hover {
   transform: scale(102%);
@@ -203,6 +202,10 @@ body {
 .about .innerDiv {
   display: flex;
 }
+.about .innerDiv .image {
+  width: 30rem;
+  max-width: 80%;
+}
 .about .innerDiv .image img {
   width: 100%;
   height: 100%;
@@ -211,10 +214,7 @@ body {
 .about .innerDiv .info {
   margin: 0 2rem;
   padding: 1rem 0.5rem;
-}
-.about .innerDiv .info p {
-  width: 50rem;
-  max-width: 95%;
+  width: 70vw;
 }
 .about .innerDiv .info a {
   color: white;
@@ -252,6 +252,8 @@ body {
 .skills .skillset {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .skills .skillset .skill {
   width: 20rem;
@@ -261,7 +263,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 90vw;
+  max-width: 80vw;
 }
 .skills .skillset .skill .writeandimg {
   display: flex;
@@ -323,10 +325,14 @@ body {
   background-color: var(--majorOrange);
 }
 .contact form {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 29rem;
+  max-width: 80vw;
 }
 .contact form input {
-  width: 29rem;
+  width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
   font-family: "Nunito";
@@ -337,7 +343,7 @@ body {
   color: white;
 }
 .contact form textarea {
-  width: 29.1rem;
+  width: 100%;
   padding: 1rem;
   height: 10rem;
   font-family: "Nunito";
@@ -354,20 +360,18 @@ body {
   border-radius: 3px;
   color: white;
   background-color: var(--majorOrange);
-  padding: 0.9rem 4.5rem;
+  padding: 0.9rem 4rem;
   font-size: 1rem;
   font-family: "Nunito";
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 0;
   cursor: pointer;
   box-shadow: 0 5px 28px 1px rgba(249, 88, 66, 0.2666666667);
 }
 
 .footer {
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 4rem;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -388,7 +392,7 @@ body {
 .footer .socials a i {
   border: 1px solid var(--majorOrange);
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 50%;
   margin: 0 0.5rem;
   width: 1.5rem;
@@ -400,4 +404,121 @@ body {
 }
 .footer .socials a:hover {
   color: var(--majorOrange);
+}
+
+@media screen and (max-width: 980px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .writeUp {
+    width: 90vw;
+  }
+  .about .innerDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .innerDiv .image {
+    width: 20rem;
+  }
+  .about .innerDiv .info {
+    padding: 1rem 0;
+    margin: 0;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .services .writeup {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .writeup h1, .services .writeup p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services .writeup .info {
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 920px) {
+  .header {
+    padding: 2.3rem 1rem;
+  }
+  .intro, .services, .about, .skills, .blog, .contact {
+    padding: 4rem 2rem;
+  }
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .header ul {
+    display: none;
+  }
+  .intro .writeUp h1 {
+    font-size: 2rem;
+  }
+  .intro .writeUp p {
+    font-size: 1rem;
+  }
+  .blog .postsboard .noPost {
+    font-size: 1.8rem;
+  }
+  .footer h2 {
+    font-size: 1.1rem;
+  }
+  .footer p {
+    font-size: 0.7rem;
+  }
+  .footer .socials a i {
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+    padding: 0.2rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .intro .image {
+    width: 100vw;
+  }
+  .intro .image img {
+    width: 100%;
+  }
+  .blog .postsboard .noPost {
+    font-size: 1.4rem;
+  }
+  .footer .socials a i {
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    margin: 0 0.05rem;
+  }
 }/*# sourceMappingURL=style.css.map */

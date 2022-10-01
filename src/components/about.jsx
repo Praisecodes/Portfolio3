@@ -8,12 +8,12 @@ export default function About(){
             <div className="innerDiv">
                 <div className="image">
                     <img src={AboutImage} alt="" />
-                </div>
+                </div><br />
                 <div className="info">
                     <h2>Hi There!</h2><br />
                     <p>Lorem Ipsum is a piece of text, used by designers to fill a space where the content will eventually sit. It helps show how text will look once a piece of content is finished,<br />
                     It helps show how text will look once a piece of content is finished, during the planning phase.</p>
-                    <br /><br /><br />
+                    <br /><br />
                     <a href={Resume} download="Praise Codes Resume.pdf">Download CV</a>
                 </div>
             </div>

@@ -5,7 +5,7 @@ export default function Blog(){
     return(
         <div className="blog">
             <h1 className="sectionTitle">Blog</h1><br />
-            <p>Recent Blog Posts</p> <br />
+            <p>Recent Blog Posts</p> <br /><br />
 
             <div className="postsboard">
                 {(postCount == 0)?
