@@ -272,6 +272,7 @@ body {
 }
 .skills .skillset .skill .writeandimg p {
   color: var(--majorOrange);
+  font-weight: 800;
 }
 
 .blog {
