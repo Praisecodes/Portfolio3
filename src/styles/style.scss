@@ -264,13 +264,14 @@ body{
             flex-direction: column;
             justify-content: center;
             max-width: 80vw;
+            border-bottom: 3px solid var(--majorOrange);
+            border-radius: 3px;
             .writeandimg{
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                p{
-                    color: var(--majorOrange);
-                    font-weight: 800;
+                h3{
+                    margin: 0 2.5rem;
+                    width: fit-content;
                 }
             }
         }

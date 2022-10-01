@@ -264,15 +264,18 @@ body {
   flex-direction: column;
   justify-content: center;
   max-width: 80vw;
+  border-bottom: 3px solid var(--majorOrange);
+  border-radius: 3px;
 }
 .skills .skillset .skill .writeandimg {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.skills .skillset .skill .writeandimg p {
-  color: var(--majorOrange);
-  font-weight: 800;
+.skills .skillset .skill .writeandimg h3 {
+  margin: 0 2.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .blog {
