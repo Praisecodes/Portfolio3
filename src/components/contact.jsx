@@ -1,4 +1,6 @@
 import { useState } from "react"
+import "react-toastify/dist/ReactToastify.css"
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Contact(){
     const [message, setMessage] = useState("");
@@ -8,15 +10,36 @@ export default function Contact(){
 
     function sendMessage(e){
         e.preventDefault();
+        e.target.disabled = true;
 
         fetch(`https://portfoliopraise.000webhostapp.com/sendemail.php?message=${message}&&name=${name}&&email=${email}`)
         .then(res=>res.json())
-        .then((data)=>{console.log(data); setSending(false)})
-        .catch((err)=>{console.log(err); setSending(false)});
+        .then((data)=>{
+            setSending(false);
+            console.log(data);
+            e.target.disabled = false;
+            if(data == "Success!!"){
+                toast.success("Sent!!", {
+                    draggable: false,
+                    position: toast.POSITION.TOP_RIGHT
+                });
+            }
+            else{
+                toast.error("Something Went Wrong!!", {
+                    draggable: false,
+                    position: toast.POSITION.TOP_RIGHT
+                });
+            }
+        })
+        .catch((err)=>{console.log(err); setSending(false); toast.error("An Error Occured!", {
+            draggable: false,
+            position: toast.POSITION.TOP_RIGHT
+        })});
     }
 
     return (
         <div className="contact">
+            <ToastContainer />
             <h1>Contact Me</h1><br /><br />
 
             <form onSubmit={(e)=>{sendMessage(e); setSending(true)}}>
